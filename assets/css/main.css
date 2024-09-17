@@ -1,0 +1,44 @@
+/* app.css */
+
+/* Style for category elements */
+.category {
+  position: relative; /* Position relative to allow positioning of dropdown */
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Container for dropdown */
+.dropdown-container {
+  position: relative;
+  z-index: 999;
+}
+
+/* Style for the subcategory list */
+.subcategory-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  position: absolute; /* Position dropdown relative to category */
+  top: 100%; /* Position below the category */
+  left: 0;
+  width: 100%;
+}
+
+/* Style for each subcategory item */
+.subcategory-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.subcategory-list li:last-child {
+  border-bottom: none; /* Remove border for last item */
+}
+
+.subcategory-list li:hover {
+  background-color: #f0f0f0; /* Highlight item on hover */
+}
